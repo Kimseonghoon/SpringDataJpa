@@ -4,6 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+<!-- dispatcher-servlet에서 controller 레이어를 등록하고
+	나머지는 applicationContext에서 다룸.
+	레이어를 나누기 위한 작업. -->
 	<context:component-scan base-package="ksh.partdb.jpa.controller" />
 
 	<bean id="tilesConfigurer"
